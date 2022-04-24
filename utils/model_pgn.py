@@ -4,7 +4,9 @@
 # the slim library (https://github.com/tensorflow/tensorflow/tree/master/tensorflow/contrib/slim).
 
 from kaffe.tensorflow import Network
-import tensorflow as tf
+# import tensorflow as tf
+import tensorflow.compat.v1 as tf
+tf.disable_v2_behavior()
 
 class PGNModel(Network):
     def setup(self, is_training, n_classes, keep_prob):

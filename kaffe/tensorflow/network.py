@@ -1,6 +1,10 @@
 import numpy as np
-import tensorflow as tf
-slim = tf.contrib.slim
+# import tensorflow as tf
+# slim = tf.contrib.slim
+import tensorflow.compat.v1 as tf
+tf.disable_v2_behavior()
+import tf_slim as slim
+
 
 DEFAULT_PADDING = 'SAME'
 
